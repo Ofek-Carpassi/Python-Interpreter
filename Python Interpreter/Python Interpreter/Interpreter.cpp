@@ -6,7 +6,6 @@
 #define WELCOME "Welcome to Magshimim Python Interperter version 1.0 by "
 #define YOUR_NAME "Ofek Carpassi"
 
-
 int main(int argc,char **argv)
 {
 	std::cout << WELCOME << YOUR_NAME << std::endl;
@@ -21,7 +20,14 @@ int main(int argc,char **argv)
 	{
 		// parsing command
 		try {
-			Parser::parseString(input_string);
+			Type* result = Parser::parseString(input_string);
+			if (result->isPrintable()) {
+				std::cout << result->toString() << std::endl;
+			}
+			if (result->getIsTemp())
+			{
+				delete result;
+			}
 		}
 		catch (InterpreterException& e) {
 			std::cout << e.what() << std::endl;

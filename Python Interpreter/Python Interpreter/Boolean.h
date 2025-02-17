@@ -1,12 +1,17 @@
-#pragma once
+#ifndef TYPE_H
+#define TYPE_H
 #include "Type.h"
 
-class Boolean : public Type<bool>
+class Boolean : public Type
 {
 public:
-	Boolean(bool value, bool isTemp);
+	Boolean(bool b);
 
-	bool isPrintable() const;
+	virtual bool isPrintable() const;
+	virtual std::string toString() const;
 
-	std::string toString() const;
-}
+private:
+	bool val;
+};
+
+#endif

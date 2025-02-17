@@ -1,13 +1,12 @@
-#pragma once
+#ifndef SEQUENCE_H
+#define SEQUENCE_H
+
 #include "Type.h"
 
-// Sequence - abstract class that represents a sequence of another type
-
-template <typename T>
-class Sequence : public Type<T>
+class Sequence
 {
-public:
-	Sequence(T value, bool isTemp);
 
-private:
 };
+
+#endif
+

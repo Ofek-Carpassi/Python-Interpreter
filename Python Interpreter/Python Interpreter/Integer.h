@@ -1,13 +1,19 @@
-#pragma once
+#ifndef INTEGER_H
+#define INTEGER_H
 #include "Type.h"
 #include <iostream>
 
-class Integer : public Type<int>
+class Integer : public Type
 {
 public:
-	Integer(int value, bool isTemp);
+	Integer(int v);
 
-	bool isPrintable() const;
+	virtual bool isPrintable() const;
 
-	std::string toString() const;
+	virtual std::string toString() const;
+
+private:
+	int val;
 };
+
+#endif

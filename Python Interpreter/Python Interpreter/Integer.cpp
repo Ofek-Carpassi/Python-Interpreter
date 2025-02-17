@@ -1,7 +1,7 @@
 #include "Integer.h"
+#include <string>
 
-Integer::Integer(int value, bool isTemp) : Type(value, isTemp)
-{}
+Integer::Integer(int v) : val(v) {}
 
 bool Integer::isPrintable() const
 {
@@ -10,5 +10,5 @@ bool Integer::isPrintable() const
 
 std::string Integer::toString() const
 {
-	return "";
+	return std::to_string(val);
 }

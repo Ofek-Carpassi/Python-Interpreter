@@ -1,23 +1,19 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include "Type.h"
 
-template <typename T>
 class Type
 {
 public:
-	Type(T value, bool isTemp);
+	Type();
 
+	void setIsTemp(const bool isTemp);
 	bool getIsTemp() const;
-	T getValue() const;
 
-	void setIsTemp(bool isTemp);
-	void setValue(T value);
+	virtual bool isPrintable() const = 0;
+	virtual std::string toString() const = 0;
 
-	bool isPrintable() const;
-
-	std::string toString() const;
-
-private:
-	T _value;
-	bool _isTemp
+protected:
+	bool _isTemp;
 };

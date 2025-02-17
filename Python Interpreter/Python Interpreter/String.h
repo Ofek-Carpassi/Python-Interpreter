@@ -1,15 +1,19 @@
-#pragma once
+#ifndef STRING_H
+#define STRING_H
 #include "Sequence.h"
 
-class String : public Sequence<std::string>
+class String : public Type
 {
 public:
-	String(std::string value, bool isTemp);
+	String(std::string& value);
 
-	bool isPrintable() const;
+	virtual bool isPrintable() const;
 
-	std::string toString() const;
+	virtual std::string toString() const;
+
 
 private:
-	std::string value;
+	std::string str;
 };
+
+#endif

@@ -1,8 +1,8 @@
 #include "String.h"
 
-String::String(std::string str, bool isTemp) : Sequence(str, isTemp)
+String::String(std::string& value)
 {
-	this->value = str;
+	str = value;
 }
 
 bool String::isPrintable() const
@@ -12,5 +12,41 @@ bool String::isPrintable() const
 
 std::string String::toString() const
 {
-	return this->value;
+	// if there is a ' in the string return with "str"
+	// if threre is no ' in the string return 'str'
+
+	char c = '\'';
+	bool b = false;
+	for (int i = 0; i < str.size(); i++)
+	{
+		if (str[i] == c)
+		{
+			b = true;
+			break;
+		}
+	}
+
+	// create a string of size str.size()
+	std::string res = "";
+	if (b)
+	{
+		res += "\"";
+	}
+	else
+	{
+		res += "'";
+	}
+
+	res += str;
+
+	if (b)
+	{
+		res += "\"";
+	}
+	else
+	{
+		res += "'";
+	}
+
+	return res;
 }

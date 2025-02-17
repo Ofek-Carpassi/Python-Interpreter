@@ -1,7 +1,6 @@
 #include "Boolean.h"
 
-Boolean::Boolean(bool value, bool isTemp) : Type(value, isTemp)
-{}
+Boolean::Boolean(bool b) : val(b) {}
 
 bool Boolean::isPrintable() const
 {
@@ -10,5 +9,5 @@ bool Boolean::isPrintable() const
 
 std::string Boolean::toString() const
 {
-	return "";
+	return val ? "True" : "False";
 }
