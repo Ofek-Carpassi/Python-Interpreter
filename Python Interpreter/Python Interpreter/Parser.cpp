@@ -15,4 +15,7 @@ Type* Parser::parseString(std::string str)
 
 }
 
+Type* getType(std::string& str)
+{
 
+}

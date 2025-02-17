@@ -6,6 +6,10 @@
 #include <unordered_map>
 #include <iostream>
 #include <sstream>
+#include "Integer.h"
+#include "String.h"
+#include "Boolean.h"
+#include "Void.h"
 
 
 class Parser
