@@ -21,13 +21,17 @@ int main(int argc,char **argv)
 		// parsing command
 		try {
 			Type* result = Parser::parseString(input_string);
-			if (result->isPrintable()) {
-				std::cout << result->toString() << std::endl;
-			}
-			if (result->getIsTemp())
+			if (result != nullptr)
 			{
-				delete result;
+				if (result->isPrintable()) {
+					std::cout << result->toString() << std::endl;
+				}
+				if (result->getIsTemp())
+				{
+					delete result;
+				}
 			}
+			
 		}
 		catch (InterpreterException& e) {
 			std::cout << e.what() << std::endl;

@@ -10,6 +10,8 @@
 #include "String.h"
 #include "NameErrorException.h"
 
+std::unordered_map<std::string, Type*> Parser::variables;
+
 Type* Parser::parseString(std::string str)
 {
 	if (str.length() <= 0) return nullptr;
@@ -19,6 +21,11 @@ Type* Parser::parseString(std::string str)
 
 	// Remove white spaces
 	Helper::trim(str);
+
+	// Check if the string is a variable
+	Type* t1 = getVariableValue(str);
+	if (variables.find(str) != variables.end())
+		return t1;
 
 	// Check if the string is an assignment
 	if (makeAssignment(str))
@@ -84,7 +91,7 @@ bool Parser::makeAssignment(std::string str)
 		return false;
 
 	std::string varName = str.substr(0, pos);
-	std::string varValue = str.substr(pos + 1);
+	std::string varValue = str.substr(pos + 2);
 
 	Helper::trim(varName);
 	Helper::trim(varValue);
