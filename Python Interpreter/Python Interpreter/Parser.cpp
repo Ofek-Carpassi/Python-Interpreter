@@ -23,9 +23,9 @@ Type* Parser::parseString(std::string str)
 	Helper::trim(str);
 
 	// Check if the string is a variable
-	Type* t1 = getVariableValue(str);
+	Type* typeOfVar = getVariableValue(str);
 	if (variables.find(str) != variables.end())
-		return t1;
+		return typeOfVar;
 
 	// Check if the string is an assignment
 	if (makeAssignment(str))
