@@ -22,4 +22,6 @@ private:
     static Type* getVariableValue(std::string& str);
 
     static std::unordered_map<std::string, Type*> variables;
+
+    static bool handleMethodCall(const std::string& str);
 };

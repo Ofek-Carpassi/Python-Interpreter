@@ -45,10 +45,10 @@
     <ClCompile Include="SyntaxException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sequence.cpp">
+    <ClCompile Include="NameErrorException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NameErrorException.cpp">
+    <ClCompile Include="List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,10 +83,10 @@
     <ClInclude Include="SyntaxException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sequence.h">
+    <ClInclude Include="NameErrorException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NameErrorException.h">
+    <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
