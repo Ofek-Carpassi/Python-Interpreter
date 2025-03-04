@@ -1,19 +1,22 @@
 # 🔧 Python Interpreter
 
-Welcome to the Python Interpreter repository, a code that was written in three and a half hours as part of the Magshimim Cyber Program. The interpreter is written in C++ and is able to interpret a subset of the Python language. The code had five steps:
+Welcome to the Python Interpreter repository, a code that was written as part of the Magshimim Cyber Program. The interpreter is written in C++ and is able to interpret a subset of the Python language. The code had five steps:
 1. Basic structure.
 2. Types.
 3. Variables.
 4. Lists.
 5. Variables manipulation.
 
-I was able to finish all of the first 3 steps - which means you can now create variables, assign them values, and print them. The code is not perfect, but it is a good start for a Python interpreter.
+I was able to finish all five steps - which means you can now create and manipulate variables including lists, call methods on lists, and print their values. The code supports deep copying of variables and nested data structures.
 
 ## Features
 
 - **Basic Structure**: The interpreter has a basic structure to handle input and output.
-- **Types**: Supports basic types such as integers, booleans, and strings.
+- **Types**: Supports basic types such as integers, booleans, strings, and lists.
 - **Variables**: Allows creating variables, assigning values to them, and printing their values.
+- **Lists**: Supports creating lists, nesting lists, and manipulating them with methods.
+- **Methods**: Implementation of list methods like append.
+- **Deep Copying**: Variables are properly deep-copied to avoid reference issues.
 
 ## Usage
 
@@ -38,6 +41,8 @@ To use the interpreter, follow these steps:
     - **Create a variable**: `x = 5`
     - **Print a variable**: `x`
     - **Reassign a variable**: `x = 10`
+    - **Create a list**: `x = [1, 2, "hello", True]`
+    - **Append to a list**: `x.append(3)`
     - **Quit the interpreter**: `quit()`
 
 ## Example
@@ -50,10 +55,10 @@ Welcome to Magshimim Python Interpreter version 1.0 by Ofek Carpassi
 >>> y = "Hello"
 >>> y
 'Hello'
+>>> z = [1, 2, 3]
+>>> z
+[1, 2, 3]
+>>> z.append(4)
+>>> z
+[1, 2, 3, 4]
 >>> quit()
-
-
-## Built By
-Crafted with dedication by [Ofek Carpassi](https://github.com/Ofek-Carpassi). All rights reserved.
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
