@@ -1,21 +1,22 @@
 # 🔧 Python Interpreter
 
-Welcome to the Python Interpreter repository, a code that was written as part of the Magshimim Cyber Program. The interpreter is written in C++ and is able to interpret a subset of the Python language. The code had five steps:
+Welcome to the Python Interpreter repository, a code that was written as part of the Magshimim Cyber Program. The interpreter is written in C++ and can interpret a subset of the Python language. The code had five steps:
 1. Basic structure.
 2. Types.
 3. Variables.
 4. Lists.
 5. Variables manipulation.
 
-I was able to finish all five steps - which means you can now create and manipulate variables including lists, call methods on lists, and print their values. The code supports deep copying of variables and nested data structures.
+I was able to finish 4 - which means you can now create and manipulate variables including lists, call methods on lists, and print their values. The code supports deep copying of variables and nested data structures.
+I was able to finish the first three steps in the span of the 4 hours we worked on the project in class and the rest in an hour at home.
 
 ## Features
 
 - **Basic Structure**: The interpreter has a basic structure to handle input and output.
 - **Types**: Supports basic types such as integers, booleans, strings, and lists.
 - **Variables**: Allows creating variables, assigning values to them, and printing their values.
-- **Lists**: Supports creating lists, nesting lists, and manipulating them with methods.
-- **Methods**: Implementation of list methods like append.
+- **Lists**: Supports creating, nesting, and manipulating lists with methods.
+- **Methods**: Implement list methods like the append.
 - **Deep Copying**: Variables are properly deep-copied to avoid reference issues.
 
 ## Usage
