@@ -7,7 +7,8 @@ Welcome to the Python Interpreter repository, a code that was written as part of
 4. Lists.
 5. Variables manipulation.
 
-I was able to finish 4 - which means you can now create and manipulate variables including lists, call methods on lists, and print their values. The code supports deep copying of variables and nested data structures.
+I was able to finish 4 of the five steps - which means you can now create and manipulate variables including lists, call methods on lists, and print their values. The code supports deep copying of variables and nested data structures.
+
 I was able to finish the first three steps in the span of the 4 hours we worked on the project in class and the rest in an hour at home.
 
 ## Features
